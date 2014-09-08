@@ -3463,7 +3463,7 @@
                 //and record survey as abandoned
                 if(Math.abs(rptStartTime.diff(rptFinishTime, 'seconds')) < timeToTakeSurvey ){
                     //writeToRandomPromptIntFile(surveyString + '\n', true, function(){
-                    writeToRandomPromptIntFile(surveyString + '\n', false, function(){
+                    writeToRandomPromptIntFile(surveyString + '\n', true, function(){
 
                         resetSurveyWidgets();
                         alert("Thank you for completing an Random Prompt Interview!");
@@ -3587,7 +3587,7 @@
                     beforeTobEmoSurveyCData.bconfdnt);
 
             //writeToTobaccoUseIntFile(surveyString+ '\n', true, function(){
-            writeToTobaccoUseIntFile(surveyString+ '\n', false, function(){
+            writeToTobaccoUseIntFile(surveyString+ '\n', true, function(){
                 resetSurveyWidgets();
                 alert("Thank you for completing a Tobacco Use Interview!");
             });
